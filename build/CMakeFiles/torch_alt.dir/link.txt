@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/torch_alt.dir/src/main.cpp.o -o bin/torch_alt  /usr/lib/x86_64-linux-gnu/libOpenCL.so 
