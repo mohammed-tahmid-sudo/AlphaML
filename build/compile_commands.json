@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/data/Dataset.cpp.o -c /home/tahmid/alphaML/src/data/Dataset.cpp",
+  "file": "/home/tahmid/alphaML/src/data/Dataset.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/data/Dataset.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/layers/Activation.cpp.o -c /home/tahmid/alphaML/src/layers/Activation.cpp",
+  "file": "/home/tahmid/alphaML/src/layers/Activation.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/layers/Activation.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/layers/Dense.cpp.o -c /home/tahmid/alphaML/src/layers/Dense.cpp",
+  "file": "/home/tahmid/alphaML/src/layers/Dense.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/layers/Dense.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/losses/CrossEntropyLoss.cpp.o -c /home/tahmid/alphaML/src/losses/CrossEntropyLoss.cpp",
+  "file": "/home/tahmid/alphaML/src/losses/CrossEntropyLoss.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/losses/CrossEntropyLoss.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o -c /home/tahmid/alphaML/src/losses/MSELoss.cpp",
+  "file": "/home/tahmid/alphaML/src/losses/MSELoss.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/main.cpp.o -c /home/tahmid/alphaML/src/main.cpp",
+  "file": "/home/tahmid/alphaML/src/main.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o -c /home/tahmid/alphaML/src/optimizers/Adam.cpp",
+  "file": "/home/tahmid/alphaML/src/optimizers/Adam.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o -c /home/tahmid/alphaML/src/optimizers/SGD.cpp",
+  "file": "/home/tahmid/alphaML/src/optimizers/SGD.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o -c /home/tahmid/alphaML/src/utils/Tensor.cpp",
+  "file": "/home/tahmid/alphaML/src/utils/Tensor.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o -c /home/tahmid/alphaML/src/utils/Utils.cpp",
+  "file": "/home/tahmid/alphaML/src/utils/Utils.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o"
+}
+]
