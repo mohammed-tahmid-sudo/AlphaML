@@ -1,5 +1,5 @@
 CMakeFiles/torch_alt.dir/src/main.cpp.o: \
- /home/tahmid/alpha_torch/src/main.cpp /usr/include/stdc-predef.h \
+ /home/tahmid/alphaML/src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -148,4 +148,9 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/tahmid/alphaML/include/utils/Tensor.h \
+ /home/tahmid/alphaML/include/layers/Dense.h \
+ /home/tahmid/alphaML/include/layers/Activation.h \
+ /home/tahmid/alphaML/include/losses/Loss.h \
+ /home/tahmid/alphaML/include/optimizers/Optimizer.h

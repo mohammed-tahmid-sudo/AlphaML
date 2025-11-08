@@ -1,4 +1,4 @@
-# Install script for directory: /home/tahmid/alpha_torch
+# Install script for directory: /home/tahmid/alphaML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tahmid/alpha_torch/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tahmid/alphaML/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

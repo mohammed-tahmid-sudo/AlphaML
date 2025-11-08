@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tahmid/alpha_torch
+CMAKE_SOURCE_DIR = /home/tahmid/alphaML
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tahmid/alpha_torch/build
+CMAKE_BINARY_DIR = /home/tahmid/alphaML/build
 
 # Utility rule file for run.
 
@@ -67,7 +67,7 @@ include CMakeFiles/run.dir/compiler_depend.make
 include CMakeFiles/run.dir/progress.make
 
 CMakeFiles/run: bin/torch_alt
-	cd /home/tahmid/alpha_torch/build/bin && /home/tahmid/alpha_torch/build/bin/torch_alt
+	cd /home/tahmid/alphaML/build/bin && /home/tahmid/alphaML/build/bin/torch_alt
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	cd /home/tahmid/alpha_torch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tahmid/alpha_torch /home/tahmid/alpha_torch /home/tahmid/alpha_torch/build /home/tahmid/alpha_torch/build /home/tahmid/alpha_torch/build/CMakeFiles/run.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/tahmid/alphaML/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tahmid/alphaML /home/tahmid/alphaML /home/tahmid/alphaML/build /home/tahmid/alphaML/build /home/tahmid/alphaML/build/CMakeFiles/run.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/run.dir/depend
 

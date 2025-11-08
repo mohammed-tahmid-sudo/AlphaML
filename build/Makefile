@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tahmid/alpha_torch
+CMAKE_SOURCE_DIR = /home/tahmid/alphaML
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tahmid/alpha_torch/build
+CMAKE_BINARY_DIR = /home/tahmid/alphaML/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tahmid/alpha_torch/build/CMakeFiles /home/tahmid/alpha_torch/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tahmid/alphaML/build/CMakeFiles /home/tahmid/alphaML/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tahmid/alpha_torch/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tahmid/alphaML/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,126 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+src/data/Dataset.o: src/data/Dataset.cpp.o
+.PHONY : src/data/Dataset.o
+
+# target to build an object file
+src/data/Dataset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/data/Dataset.cpp.o
+.PHONY : src/data/Dataset.cpp.o
+
+src/data/Dataset.i: src/data/Dataset.cpp.i
+.PHONY : src/data/Dataset.i
+
+# target to preprocess a source file
+src/data/Dataset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/data/Dataset.cpp.i
+.PHONY : src/data/Dataset.cpp.i
+
+src/data/Dataset.s: src/data/Dataset.cpp.s
+.PHONY : src/data/Dataset.s
+
+# target to generate assembly for a file
+src/data/Dataset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/data/Dataset.cpp.s
+.PHONY : src/data/Dataset.cpp.s
+
+src/layers/Activation.o: src/layers/Activation.cpp.o
+.PHONY : src/layers/Activation.o
+
+# target to build an object file
+src/layers/Activation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Activation.cpp.o
+.PHONY : src/layers/Activation.cpp.o
+
+src/layers/Activation.i: src/layers/Activation.cpp.i
+.PHONY : src/layers/Activation.i
+
+# target to preprocess a source file
+src/layers/Activation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Activation.cpp.i
+.PHONY : src/layers/Activation.cpp.i
+
+src/layers/Activation.s: src/layers/Activation.cpp.s
+.PHONY : src/layers/Activation.s
+
+# target to generate assembly for a file
+src/layers/Activation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Activation.cpp.s
+.PHONY : src/layers/Activation.cpp.s
+
+src/layers/Dense.o: src/layers/Dense.cpp.o
+.PHONY : src/layers/Dense.o
+
+# target to build an object file
+src/layers/Dense.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Dense.cpp.o
+.PHONY : src/layers/Dense.cpp.o
+
+src/layers/Dense.i: src/layers/Dense.cpp.i
+.PHONY : src/layers/Dense.i
+
+# target to preprocess a source file
+src/layers/Dense.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Dense.cpp.i
+.PHONY : src/layers/Dense.cpp.i
+
+src/layers/Dense.s: src/layers/Dense.cpp.s
+.PHONY : src/layers/Dense.s
+
+# target to generate assembly for a file
+src/layers/Dense.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/layers/Dense.cpp.s
+.PHONY : src/layers/Dense.cpp.s
+
+src/losses/CrossEntropyLoss.o: src/losses/CrossEntropyLoss.cpp.o
+.PHONY : src/losses/CrossEntropyLoss.o
+
+# target to build an object file
+src/losses/CrossEntropyLoss.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/CrossEntropyLoss.cpp.o
+.PHONY : src/losses/CrossEntropyLoss.cpp.o
+
+src/losses/CrossEntropyLoss.i: src/losses/CrossEntropyLoss.cpp.i
+.PHONY : src/losses/CrossEntropyLoss.i
+
+# target to preprocess a source file
+src/losses/CrossEntropyLoss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/CrossEntropyLoss.cpp.i
+.PHONY : src/losses/CrossEntropyLoss.cpp.i
+
+src/losses/CrossEntropyLoss.s: src/losses/CrossEntropyLoss.cpp.s
+.PHONY : src/losses/CrossEntropyLoss.s
+
+# target to generate assembly for a file
+src/losses/CrossEntropyLoss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/CrossEntropyLoss.cpp.s
+.PHONY : src/losses/CrossEntropyLoss.cpp.s
+
+src/losses/MSELoss.o: src/losses/MSELoss.cpp.o
+.PHONY : src/losses/MSELoss.o
+
+# target to build an object file
+src/losses/MSELoss.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o
+.PHONY : src/losses/MSELoss.cpp.o
+
+src/losses/MSELoss.i: src/losses/MSELoss.cpp.i
+.PHONY : src/losses/MSELoss.i
+
+# target to preprocess a source file
+src/losses/MSELoss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.i
+.PHONY : src/losses/MSELoss.cpp.i
+
+src/losses/MSELoss.s: src/losses/MSELoss.cpp.s
+.PHONY : src/losses/MSELoss.s
+
+# target to generate assembly for a file
+src/losses/MSELoss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.s
+.PHONY : src/losses/MSELoss.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -166,6 +286,102 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/optimizers/Adam.o: src/optimizers/Adam.cpp.o
+.PHONY : src/optimizers/Adam.o
+
+# target to build an object file
+src/optimizers/Adam.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o
+.PHONY : src/optimizers/Adam.cpp.o
+
+src/optimizers/Adam.i: src/optimizers/Adam.cpp.i
+.PHONY : src/optimizers/Adam.i
+
+# target to preprocess a source file
+src/optimizers/Adam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.i
+.PHONY : src/optimizers/Adam.cpp.i
+
+src/optimizers/Adam.s: src/optimizers/Adam.cpp.s
+.PHONY : src/optimizers/Adam.s
+
+# target to generate assembly for a file
+src/optimizers/Adam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.s
+.PHONY : src/optimizers/Adam.cpp.s
+
+src/optimizers/SGD.o: src/optimizers/SGD.cpp.o
+.PHONY : src/optimizers/SGD.o
+
+# target to build an object file
+src/optimizers/SGD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o
+.PHONY : src/optimizers/SGD.cpp.o
+
+src/optimizers/SGD.i: src/optimizers/SGD.cpp.i
+.PHONY : src/optimizers/SGD.i
+
+# target to preprocess a source file
+src/optimizers/SGD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.i
+.PHONY : src/optimizers/SGD.cpp.i
+
+src/optimizers/SGD.s: src/optimizers/SGD.cpp.s
+.PHONY : src/optimizers/SGD.s
+
+# target to generate assembly for a file
+src/optimizers/SGD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.s
+.PHONY : src/optimizers/SGD.cpp.s
+
+src/utils/Tensor.o: src/utils/Tensor.cpp.o
+.PHONY : src/utils/Tensor.o
+
+# target to build an object file
+src/utils/Tensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o
+.PHONY : src/utils/Tensor.cpp.o
+
+src/utils/Tensor.i: src/utils/Tensor.cpp.i
+.PHONY : src/utils/Tensor.i
+
+# target to preprocess a source file
+src/utils/Tensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.i
+.PHONY : src/utils/Tensor.cpp.i
+
+src/utils/Tensor.s: src/utils/Tensor.cpp.s
+.PHONY : src/utils/Tensor.s
+
+# target to generate assembly for a file
+src/utils/Tensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.s
+.PHONY : src/utils/Tensor.cpp.s
+
+src/utils/Utils.o: src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.o
+
+# target to build an object file
+src/utils/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.cpp.o
+
+src/utils/Utils.i: src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.i
+
+# target to preprocess a source file
+src/utils/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.cpp.i
+
+src/utils/Utils.s: src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.s
+
+# target to generate assembly for a file
+src/utils/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -176,9 +392,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run"
 	@echo "... torch_alt"
+	@echo "... src/data/Dataset.o"
+	@echo "... src/data/Dataset.i"
+	@echo "... src/data/Dataset.s"
+	@echo "... src/layers/Activation.o"
+	@echo "... src/layers/Activation.i"
+	@echo "... src/layers/Activation.s"
+	@echo "... src/layers/Dense.o"
+	@echo "... src/layers/Dense.i"
+	@echo "... src/layers/Dense.s"
+	@echo "... src/losses/CrossEntropyLoss.o"
+	@echo "... src/losses/CrossEntropyLoss.i"
+	@echo "... src/losses/CrossEntropyLoss.s"
+	@echo "... src/losses/MSELoss.o"
+	@echo "... src/losses/MSELoss.i"
+	@echo "... src/losses/MSELoss.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/optimizers/Adam.o"
+	@echo "... src/optimizers/Adam.i"
+	@echo "... src/optimizers/Adam.s"
+	@echo "... src/optimizers/SGD.o"
+	@echo "... src/optimizers/SGD.i"
+	@echo "... src/optimizers/SGD.s"
+	@echo "... src/utils/Tensor.o"
+	@echo "... src/utils/Tensor.i"
+	@echo "... src/utils/Tensor.s"
+	@echo "... src/utils/Utils.o"
+	@echo "... src/utils/Utils.i"
+	@echo "... src/utils/Utils.s"
 .PHONY : help
 
 
