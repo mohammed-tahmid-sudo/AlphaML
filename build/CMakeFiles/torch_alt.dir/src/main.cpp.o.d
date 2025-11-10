@@ -1,6 +1,11 @@
 CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /home/tahmid/alphaML/src/main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+ /home/tahmid/alphaML/include/layers/Activation.h \
+ /home/tahmid/alphaML/include/layers/Dense.h \
+ /home/tahmid/alphaML/include/losses/Loss.h \
+ /home/tahmid/alphaML/include/optimizers/Optimizer.h \
+ /home/tahmid/alphaML/include/utils/Tensor.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -148,9 +153,8 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/tahmid/alphaML/include/utils/Tensor.h \
- /home/tahmid/alphaML/include/layers/Dense.h \
- /home/tahmid/alphaML/include/layers/Activation.h \
- /home/tahmid/alphaML/include/losses/Loss.h \
- /home/tahmid/alphaML/include/optimizers/Optimizer.h
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc
