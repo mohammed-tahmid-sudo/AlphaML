@@ -4,15 +4,18 @@
 #include "optimizers/Optimizer.h"
 #include "utils/Tensor.h"
 
-int main() {
+int main()  {
+    Tensor<int> t1 = {1, 2, 3};
+    Tensor<Tensor<int>> t2 = {t1, t1};
+    Tensor<Tensor<Tensor<int>>> t3 = {t2, t2};
+    Tensor<Tensor<Tensor<int>>> t4 = {t2, t2};
 
-  Tensor<Tensor<int>> A = {{1, 2, 3}, {4, 5, 6}};
-  // 3x2 matrix B
-  Tensor<Tensor<int>> B = {{7, 8}, {9, 10}, {11, 12}};
 
-  Tensor<Tensor<int>> C = Matmul(A, B);
-
-  C.print();
-
-  return 0;
+    t1.print(); // [1, 2, 3]
+    std::cout << "\n";
+    t2.print(); // [[1, 2, 3], [1, 2, 3]]
+    std::cout << "\n";
+    t3.print(); // [[[1, 2, 3], [1, 2, 3]], [[1, 2, 3], [1, 2, 3]]]
+	Tensor<Tensor<Tensor<int>>> output = Matmul(t3, t4);
+	output.print();
 }
