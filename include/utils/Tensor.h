@@ -9,9 +9,9 @@
 
 #pragma once
 
+#include <cstddef>
 #include <initializer_list>
 #include <iostream>
-#include <stdexcept>
 #include <type_traits>
 #include <vector>
 
@@ -39,6 +39,7 @@ public:
       if (i + 1 < data.size())
         std::cout << ", ";
     }
-    std::cout << "]";
+    std::cout << "]" << std::endl;
   }
+  void Push_back(const T &dt) { data.push_back(dt); }
 };
