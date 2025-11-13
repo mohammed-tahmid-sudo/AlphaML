@@ -18,7 +18,7 @@
 // ---------------- Tensor class ----------------
 template <typename T> class Tensor {
 public:
-  static_assert(std::is_arithmetic_v<T>,
+  static_assert(std::is_arithmetic_v<T> || std::is_class_v<T>,
                 "Tensor only supports arithmetic or nested Tensor types.");
 
 private:
@@ -28,4 +28,17 @@ public:
   Tensor() = default;
   Tensor(std::initializer_list<T> list) : data(list) {}
 
+  void print() {
+    std::cout << "[";
+    for (size_t i = 0; i < data.size(); ++i) {
+      if constexpr (std::is_class_v<T>) // if element is another Tensor
+        data[i].print();
+      else
+        std::cout << data[i];
+
+      if (i + 1 < data.size())
+        std::cout << ", ";
+    }
+    std::cout << "]";
+  }
 };
