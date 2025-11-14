@@ -41,5 +41,55 @@ public:
     }
     std::cout << "]" << std::endl;
   }
+
   void Push_back(const T &dt) { data.push_back(dt); }
+  size_t Size() const { return data.size(); }
+  void Front() { return data.front(); }
+  void Back() { return data.back(); }
+
+  T &operator[](size_t i) { return data[i]; }
+  const T &operator[](size_t i) const { return data[i]; }
 };
+
+template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {
+  Tensor<T> result;
+  for (size_t i = 0; i < A.Size(); ++i) {
+    if constexpr (std::is_class_v<T>)
+      result.Push_back(Add(A[i], B[i])); // recurse for nested tensors
+    else
+      result.Push_back(A[i] + B[i]); // base case
+  }
+  return result;
+}
+
+template <typename T> Tensor<T> Sub(const Tensor<T> &A, const Tensor<T> &B) {
+  Tensor<T> result;
+  for (size_t i = 0; i < A.Size(); ++i) {
+    if constexpr (std::is_class_v<T>)
+      result.Push_back(Sub(A[i], B[i])); // recurse for nested tensors
+    else
+      result.Push_back(A[i] - B[i]); // base case
+  }
+  return result;
+}
+
+// 1D vector dot product
+int Matmul1D(const Tensor<int> &a, const Tensor<int> &b);
+
+// 2D matrix multiplication
+Tensor<Tensor<int>> Matmul2D(const Tensor<Tensor<int>> &A,
+                             const Tensor<Tensor<int>> &B);
+
+// 3D tensor multiplication along last two axes
+Tensor<Tensor<Tensor<int>>> Matmul3D(const Tensor<Tensor<Tensor<int>>> &A,
+                                     const Tensor<Tensor<Tensor<int>>> &B);
+
+// 4D tensor multiplication along last two axes
+Tensor<Tensor<Tensor<Tensor<int>>>>
+Matmul4D(const Tensor<Tensor<Tensor<Tensor<int>>>> &A,
+         const Tensor<Tensor<Tensor<Tensor<int>>>> &B);
+
+
+
+
+
