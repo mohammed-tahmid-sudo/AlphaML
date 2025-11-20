@@ -43,7 +43,7 @@ public:
   }
 
   void Push_back(const T &dt) { data.push_back(dt); }
-  size_t Size() const { return data.size(); }
+  size_t size() const { return data.size(); }
   void Front() { return data.front(); }
   void Back() { return data.back(); }
 
@@ -53,7 +53,7 @@ public:
 
 template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {
   Tensor<T> result;
-  for (size_t i = 0; i < A.Size(); ++i) {
+  for (size_t i = 0; i < A.size(); ++i) {
     if constexpr (std::is_class_v<T>)
       result.Push_back(Add(A[i], B[i])); // recurse for nested tensors
     else
@@ -64,7 +64,7 @@ template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {
 
 template <typename T> Tensor<T> Sub(const Tensor<T> &A, const Tensor<T> &B) {
   Tensor<T> result;
-  for (size_t i = 0; i < A.Size(); ++i) {
+  for (size_t i = 0; i < A.size(); ++i) {
     if constexpr (std::is_class_v<T>)
       result.Push_back(Sub(A[i], B[i])); // recurse for nested tensors
     else
