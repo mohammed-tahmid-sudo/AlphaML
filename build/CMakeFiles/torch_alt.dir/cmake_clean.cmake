@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o.d"
   "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o"
   "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o.d"
+  "CMakeFiles/torch_alt.dir/src/parent.cpp.o"
+  "CMakeFiles/torch_alt.dir/src/parent.cpp.o.d"
   "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o"
   "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o.d"
   "CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o"

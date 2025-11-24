@@ -49,6 +49,12 @@
 },
 {
   "directory": "/home/tahmid/alphaML/build",
+  "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/parent.cpp.o -c /home/tahmid/alphaML/src/parent.cpp",
+  "file": "/home/tahmid/alphaML/src/parent.cpp",
+  "output": "CMakeFiles/torch_alt.dir/src/parent.cpp.o"
+},
+{
+  "directory": "/home/tahmid/alphaML/build",
   "command": "/usr/bin/c++  -I/home/tahmid/alphaML/include -std=gnu++17 -o CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o -c /home/tahmid/alphaML/src/utils/Tensor.cpp",
   "file": "/home/tahmid/alphaML/src/utils/Tensor.cpp",
   "output": "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o"

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tahmid/alphaML/src/main.cpp" "CMakeFiles/torch_alt.dir/src/main.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/main.cpp.o.d"
   "/home/tahmid/alphaML/src/optimizers/Adam.cpp" "CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o.d"
   "/home/tahmid/alphaML/src/optimizers/SGD.cpp" "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o.d"
+  "/home/tahmid/alphaML/src/parent.cpp" "CMakeFiles/torch_alt.dir/src/parent.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/parent.cpp.o.d"
   "/home/tahmid/alphaML/src/utils/Tensor.cpp" "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o.d"
   "/home/tahmid/alphaML/src/utils/Utils.cpp" "CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o" "gcc" "CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o.d"
   )
