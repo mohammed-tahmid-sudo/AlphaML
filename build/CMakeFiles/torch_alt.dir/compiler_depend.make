@@ -26,10 +26,8 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -71,24 +69,20 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -118,8 +112,6 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
@@ -483,6 +475,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -533,6 +527,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
@@ -579,14 +575,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/features.h:
 
-/usr/include/ctype.h:
-
-/usr/include/c++/13/vector:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/c++/13/tuple:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/bits/refwrap.h:
@@ -594,6 +582,16 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/home/tahmid/alphaML/include/optimizers/Optimizer.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/bits/basic_string.h:
 
 /home/tahmid/alphaML/src/layers/Activation.cpp:
 
@@ -607,9 +605,15 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -621,17 +625,11 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/errno.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
 /usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/istream.tcc:
 
@@ -645,10 +643,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/c++/13/typeinfo:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -656,28 +650,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/string:
-
-/usr/include/time.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/home/tahmid/alphaML/include/layers/Layer.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/home/tahmid/alphaML/include/layers/Dense.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -695,7 +667,25 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/c++/13/algorithm:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/13/string:
+
+/usr/include/time.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/home/tahmid/alphaML/include/layers/Layer.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/home/tahmid/alphaML/include/layers/Dense.h:
 
 /home/tahmid/alphaML/src/optimizers/Adam.cpp:
 
@@ -707,13 +697,7 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/alloca.h:
 
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/stdc-predef.h:
-
-/home/tahmid/alphaML/include/optimizers/Optimizer.h:
-
-/usr/include/c++/13/bits/specfun.h:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
 /home/tahmid/alphaML/src/layers/Dense.cpp:
 
@@ -731,6 +715,14 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /home/tahmid/alphaML/src/losses/MSELoss.cpp:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/wctype.h:
@@ -747,6 +739,12 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bit:
 
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/c++/13/type_traits:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/stl_iterator.h:
@@ -754,10 +752,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/functexcept.h:
 
 /usr/include/c++/13/ios:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
@@ -783,21 +777,17 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/backward/binders.h:
 
+/usr/include/c++/13/bits/stringfwd.h:
+
 /usr/include/c++/13/bits/locale_facets.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/bits/postypes.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/c++/13/bits/uses_allocator.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
+/usr/include/c++/13/bits/cpp_type_traits.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -807,12 +797,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/stl_construct.h:
 
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/c++/13/new:
-
 /home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp:
 
 /usr/include/asm-generic/errno.h:
@@ -821,23 +805,9 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/endian.h:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/tr1/poly_hermite.tcc:
+/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -853,9 +823,9 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/c++/13/bits/stl_algo.h:
-
 /usr/include/c++/13/cstddef:
+
+/usr/include/c++/13/vector:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -889,13 +859,9 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/limits:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/usr/include/c++/13/ext/alloc_traits.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+/usr/include/c++/13/new:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -906,6 +872,10 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/typeinfo:
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
@@ -927,8 +897,14 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/endian.h:

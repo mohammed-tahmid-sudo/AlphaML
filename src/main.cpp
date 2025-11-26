@@ -3,32 +3,26 @@
 #include "losses/Loss.h"
 #include "optimizers/Optimizer.h"
 #include "utils/Tensor.h"
-#include <algorithm>
 
 int main() {
-    // 1D example
-    Tensor<int> v1{1,2,3};
-    Tensor<int> v2{4,5,6};
-    std::cout << "1D dot product: " << Matmul1D(v1,v2) << "\n";
+  int in_features = 3;
+  int out_features = 1;
 
-    // 2D example
-    Tensor<Tensor<int>> m1{{1,2},{3,4}};
-    Tensor<Tensor<int>> m2{{5,6},{7,8}};
-    auto m2d = Matmul2D(m1,m2);
-    m2d.print();
+  Dense1D<double> layer(in_features, out_features);
 
-    // 3D example
-    Tensor<Tensor<Tensor<int>>> t3d1{{{1,2},{3,4}}, {{5,6},{7,8}}};
-    Tensor<Tensor<Tensor<int>>> t3d2{{{1,0},{0,1}}, {{1,0},{0,1}}};
-    auto t3d = Matmul3D(t3d1, t3d2);
-    t3d.print();
+  // Initialize weights and bias
+  layer.weights = Tensor<Tensor<double>>(
+      out_features, Tensor<double>(in_features, 1.0) // all 1s
+  );
 
-    // 4D example
-    Tensor<Tensor<Tensor<Tensor<int>>>> t4d1{{{{1,2},{3,4}}}};
-    Tensor<Tensor<Tensor<Tensor<int>>>> t4d2{{{{1,0},{0,1}}}};
-    auto t4d = Matmul4D(t4d1, t4d2);
-    t4d.print();
+  layer.bias = Tensor<double>(out_features, 0.5); // all 0.5
 
-    return 0;
+  // Set input
+  layer.input = Tensor<double>(in_features, 2.0); // all 2s
+
+  // Forward pass
+  Tensor<double> output = layer.Forward();
+
+  output.print();
+  return 0;
 }
-

@@ -67,7 +67,7 @@ include CMakeFiles/run.dir/compiler_depend.make
 include CMakeFiles/run.dir/progress.make
 
 CMakeFiles/run: bin/torch_alt
-	cd /home/tahmid/alphaML/build/bin && /home/tahmid/alphaML/build/bin/torch_alt
+	cd /home/tahmid/alphaML/build/bin && ./torch_alt
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make

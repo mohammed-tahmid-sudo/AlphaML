@@ -1,6 +1,7 @@
 CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /home/tahmid/alphaML/src/main.cpp /usr/include/stdc-predef.h \
  /home/tahmid/alphaML/include/layers/Activation.h \
+ /home/tahmid/alphaML/include/layers/Layer.h \
  /home/tahmid/alphaML/include/utils/Tensor.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -178,13 +179,5 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /home/tahmid/alphaML/include/layers/Dense.h \
- /home/tahmid/alphaML/include/layers/Layer.h \
  /home/tahmid/alphaML/include/losses/Loss.h \
- /home/tahmid/alphaML/include/optimizers/Optimizer.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h
+ /home/tahmid/alphaML/include/optimizers/Optimizer.h

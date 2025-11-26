@@ -1,34 +1,36 @@
 // Activation.h / Activation.cpp
 // Activation functions: ReLU, Sigmoid, Tanh.
 
+#include "layers/Layer.h"
 #include "utils/Tensor.h"
 
 #include <cmath>
-#include <type_traits>
 
 // ReLU for multi-dimensional Tensor
-template <typename T> void ReLU(Tensor<T> &tensor) {
-  for (size_t i = 0; i < tensor.size(); ++i) {
-    if constexpr (std::is_class_v<T>) {
-      // Recurse if element is another Tensor
-      ReLU(tensor[i]);
-    } else {
-      // Base case: apply ReLU
-      tensor[i] = (tensor[i] > 0) ? tensor[i] : 0;
+template <typename T> class ReLU : public Layer<T> {
+public:
+  Tensor<T> tensor;
+  ReLU(Tensor<T> data) : tensor(data) {}
+
+  Tensor<T> Forward() {
+    Tensor<T> y;
+    for (int i = 0; i < tensor.size(); i++) {
+      y.Push_back(std::max(T(0), tensor[i]));
     }
+    return y;
   }
-}
+};
 
-template <typename T> void Sigmoid(Tensor<T> &tensor) {
-  for (size_t i = 0; i < tensor.size(); ++i) {
-    if constexpr (std::is_class_v<T>) {
-      // Recurse if element is another Tensor
-      Sigmoid(tensor[i]);
-    } else {
-      // Base case: apply ReLU
-      tensor[i] = 1.0 / (1.0 + std::exp(-i));
+template <typename T> class Sigmoid : public Layer<T> {
+public:
+  Tensor<T> tensor;
+  Sigmoid(Tensor<T> data) : tensor(data) {}
+
+  Tensor<T> Forward() {
+    Tensor<T> y;
+    for (int i = 0; i < tensor.size(); i++) {
+      y.Push_back(T(1) / (T(1) + std::exp(-tensor[i])));
     }
+    return y;
   }
-}
-
-
+};

@@ -27,6 +27,7 @@ private:
 public:
   Tensor() = default;
   Tensor(std::initializer_list<T> list) : data(list) {}
+  Tensor(size_t n, const T &value = T()) : data(n, value) {}
 
   void print() {
     std::cout << "[";
@@ -44,8 +45,8 @@ public:
 
   void Push_back(const T &dt) { data.push_back(dt); }
   size_t size() const { return data.size(); }
-  void Front() { return data.front(); }
-  void Back() { return data.back(); }
+  T& Front() { return data.front(); }
+  T& Back() { return data.back(); }
 
   T &operator[](size_t i) { return data[i]; }
   const T &operator[](size_t i) const { return data[i]; }
@@ -88,8 +89,3 @@ Tensor<Tensor<Tensor<int>>> Matmul3D(const Tensor<Tensor<Tensor<int>>> &A,
 Tensor<Tensor<Tensor<Tensor<int>>>>
 Matmul4D(const Tensor<Tensor<Tensor<Tensor<int>>>> &A,
          const Tensor<Tensor<Tensor<Tensor<int>>>> &B);
-
-
-
-
-

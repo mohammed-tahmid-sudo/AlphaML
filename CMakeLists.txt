@@ -60,8 +60,15 @@ if(NOT EXISTS ${MAIN_CPP})
 endif()
 
 # --- Custom run target ---
+# add_custom_target(run
+#     COMMAND torch_alt
+#     DEPENDS torch_alt
+#     WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+# )
+
+
 add_custom_target(run
-    COMMAND torch_alt
+    COMMAND ./torch_alt
     DEPENDS torch_alt
     WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
 )
