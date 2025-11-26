@@ -181,19 +181,19 @@ CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tahmid/alphaML/src/optimizers/SGD.cpp -o CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.s
 
-CMakeFiles/torch_alt.dir/src/parent.cpp.o: CMakeFiles/torch_alt.dir/flags.make
-CMakeFiles/torch_alt.dir/src/parent.cpp.o: /home/tahmid/alphaML/src/parent.cpp
-CMakeFiles/torch_alt.dir/src/parent.cpp.o: CMakeFiles/torch_alt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tahmid/alphaML/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/torch_alt.dir/src/parent.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torch_alt.dir/src/parent.cpp.o -MF CMakeFiles/torch_alt.dir/src/parent.cpp.o.d -o CMakeFiles/torch_alt.dir/src/parent.cpp.o -c /home/tahmid/alphaML/src/parent.cpp
+CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o: CMakeFiles/torch_alt.dir/flags.make
+CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o: /home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp
+CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o: CMakeFiles/torch_alt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tahmid/alphaML/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o -MF CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o.d -o CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o -c /home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp
 
-CMakeFiles/torch_alt.dir/src/parent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/torch_alt.dir/src/parent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tahmid/alphaML/src/parent.cpp > CMakeFiles/torch_alt.dir/src/parent.cpp.i
+CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp > CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.i
 
-CMakeFiles/torch_alt.dir/src/parent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/torch_alt.dir/src/parent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tahmid/alphaML/src/parent.cpp -o CMakeFiles/torch_alt.dir/src/parent.cpp.s
+CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp -o CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.s
 
 CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o: CMakeFiles/torch_alt.dir/flags.make
 CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o: /home/tahmid/alphaML/src/utils/Tensor.cpp
@@ -233,7 +233,7 @@ torch_alt_OBJECTS = \
 "CMakeFiles/torch_alt.dir/src/main.cpp.o" \
 "CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o" \
 "CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o" \
-"CMakeFiles/torch_alt.dir/src/parent.cpp.o" \
+"CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o" \
 "CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o" \
 "CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o"
 
@@ -248,7 +248,7 @@ bin/torch_alt: CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/src/main.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/src/optimizers/Adam.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.o
-bin/torch_alt: CMakeFiles/torch_alt.dir/src/parent.cpp.o
+bin/torch_alt: CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o
 bin/torch_alt: CMakeFiles/torch_alt.dir/build.make

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tahmid/alphaML/include
+CXX_INCLUDES = -I/home/tahmid/alphaML -I/home/tahmid/alphaML/include
 
 CXX_FLAGS = -std=gnu++17
 

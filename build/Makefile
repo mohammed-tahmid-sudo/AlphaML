@@ -334,29 +334,29 @@ src/optimizers/SGD.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/optimizers/SGD.cpp.s
 .PHONY : src/optimizers/SGD.cpp.s
 
-src/parent.o: src/parent.cpp.o
-.PHONY : src/parent.o
+src/utils/RandomDataGenerator.o: src/utils/RandomDataGenerator.cpp.o
+.PHONY : src/utils/RandomDataGenerator.o
 
 # target to build an object file
-src/parent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/parent.cpp.o
-.PHONY : src/parent.cpp.o
+src/utils/RandomDataGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.o
+.PHONY : src/utils/RandomDataGenerator.cpp.o
 
-src/parent.i: src/parent.cpp.i
-.PHONY : src/parent.i
+src/utils/RandomDataGenerator.i: src/utils/RandomDataGenerator.cpp.i
+.PHONY : src/utils/RandomDataGenerator.i
 
 # target to preprocess a source file
-src/parent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/parent.cpp.i
-.PHONY : src/parent.cpp.i
+src/utils/RandomDataGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.i
+.PHONY : src/utils/RandomDataGenerator.cpp.i
 
-src/parent.s: src/parent.cpp.s
-.PHONY : src/parent.s
+src/utils/RandomDataGenerator.s: src/utils/RandomDataGenerator.cpp.s
+.PHONY : src/utils/RandomDataGenerator.s
 
 # target to generate assembly for a file
-src/parent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/parent.cpp.s
-.PHONY : src/parent.cpp.s
+src/utils/RandomDataGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/torch_alt.dir/build.make CMakeFiles/torch_alt.dir/src/utils/RandomDataGenerator.cpp.s
+.PHONY : src/utils/RandomDataGenerator.cpp.s
 
 src/utils/Tensor.o: src/utils/Tensor.cpp.o
 .PHONY : src/utils/Tensor.o
@@ -440,9 +440,9 @@ help:
 	@echo "... src/optimizers/SGD.o"
 	@echo "... src/optimizers/SGD.i"
 	@echo "... src/optimizers/SGD.s"
-	@echo "... src/parent.o"
-	@echo "... src/parent.i"
-	@echo "... src/parent.s"
+	@echo "... src/utils/RandomDataGenerator.o"
+	@echo "... src/utils/RandomDataGenerator.i"
+	@echo "... src/utils/RandomDataGenerator.s"
 	@echo "... src/utils/Tensor.o"
 	@echo "... src/utils/Tensor.i"
 	@echo "... src/utils/Tensor.s"

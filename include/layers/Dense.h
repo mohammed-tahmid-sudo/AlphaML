@@ -1,16 +1,18 @@
 // Dense.h / Dense.cpp
 // Fully connected layer. Implements forward and backward pass.
-#include <utils/Tensor.h>
+#pragma once
 #include <layers/Layer.h>
-
-
+#include <utils/Tensor.h>
+#include <vector>
 
 // Derived class
-template <typename T>
-class LinearLayer : public Layer<T> {
+template <typename T> class Dense2D : public Layer<T> {
+
 public:
-    T Forward(T X) override {
-        std::cout << "Forward called with: " << X << "\n";
-        return X; // just an example
-    }
+  int in_features, out_features;
+  Tensor<T> weights;
+  Tensor<T> bias;
+
+  Dense2D(int in_feat, int out_feat)
+      : in_features(in_feat), out_features(out_feat) {}
 };

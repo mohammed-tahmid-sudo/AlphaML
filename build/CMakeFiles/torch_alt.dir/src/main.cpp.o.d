@@ -178,6 +178,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /home/tahmid/alphaML/include/layers/Dense.h \
+ /home/tahmid/alphaML/include/layers/Layer.h \
  /home/tahmid/alphaML/include/losses/Loss.h \
  /home/tahmid/alphaML/include/optimizers/Optimizer.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \

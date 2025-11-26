@@ -1,8 +1,15 @@
 cmake_minimum_required(VERSION 3.12)
+
+# Export compile commands for clangd
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 project(torch_alt LANGUAGES C CXX)
 
+# --- C++ standard ---
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# --- Output directory ---
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # --- OpenCL setup ---
@@ -14,7 +21,8 @@ endif()
 
 # --- Include directories ---
 include_directories(
-    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}           # project root, allows ../ includes
+    ${PROJECT_SOURCE_DIR}/include   # main headers
     ${OpenCL_INCLUDE_DIR}
 )
 
@@ -24,11 +32,11 @@ file(GLOB_RECURSE SRC_FILES
     ${PROJECT_SOURCE_DIR}/src/*.c
 )
 
-# --- Build main executable ---
+# --- Build executable ---
 add_executable(torch_alt ${SRC_FILES})
 target_link_libraries(torch_alt PRIVATE ${OpenCL_LIBRARY})
 
-# --- Auto-create folders if missing ---
+# --- Auto-create directories if missing ---
 file(MAKE_DIRECTORY ${PROJECT_SOURCE_DIR}/src)
 file(MAKE_DIRECTORY ${PROJECT_SOURCE_DIR}/include)
 file(MAKE_DIRECTORY ${PROJECT_SOURCE_DIR}/include/layers)
