@@ -8,6 +8,6 @@ template <typename T> struct Layer {
 
   // TODO: Add Backwards
   // virtual Tensor<T> Forward(T X) = 0;
-  virtual Tensor<T> Forward() = 0;
+  virtual Tensor<T> Forward(const Tensor<T>& x) = 0;
   virtual ~Layer() = default;
 };

@@ -23,6 +23,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /home/tahmid/alphaML/include/losses/Loss.h \
   /home/tahmid/alphaML/include/optimizers/Optimizer.h \
   /home/tahmid/alphaML/include/utils/Tensor.h \
+  /home/tahmid/alphaML/include/utils/sequential.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -583,18 +584,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/stdexcept:
 
-/usr/include/c++/13/bits/specfun.h:
-
-/home/tahmid/alphaML/include/optimizers/Optimizer.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/home/tahmid/alphaML/src/layers/Activation.cpp:
-
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/include/wchar.h:
@@ -604,10 +593,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/invoke.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -624,6 +609,10 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/c++/13/bits/nested_exception.h:
 
@@ -651,6 +640,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/exception.h:
 
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
@@ -670,10 +661,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/c++/13/tuple:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/errno.h:
 
 /usr/include/c++/13/string:
 
@@ -697,7 +684,15 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/alloca.h:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/home/tahmid/alphaML/include/optimizers/Optimizer.h:
+
+/home/tahmid/alphaML/src/layers/Activation.cpp:
 
 /home/tahmid/alphaML/src/layers/Dense.cpp:
 
@@ -714,14 +709,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/basic_ios.h:
 
 /home/tahmid/alphaML/src/losses/MSELoss.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -773,6 +760,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
+/home/tahmid/alphaML/include/utils/sequential.h:
+
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/13/backward/binders.h:
@@ -788,6 +777,20 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 

@@ -45,8 +45,8 @@ public:
 
   void Push_back(const T &dt) { data.push_back(dt); }
   size_t size() const { return data.size(); }
-  T& Front() { return data.front(); }
-  T& Back() { return data.back(); }
+  T &Front() { return data.front(); }
+  T &Back() { return data.back(); }
 
   T &operator[](size_t i) { return data[i]; }
   const T &operator[](size_t i) const { return data[i]; }
@@ -75,17 +75,22 @@ template <typename T> Tensor<T> Sub(const Tensor<T> &A, const Tensor<T> &B) {
 }
 
 // 1D vector dot product
-int Matmul1D(const Tensor<int> &a, const Tensor<int> &b);
+
+template <typename T> 
+Tensor<T> Matmul1D(const Tensor<int> &a, const Tensor<int> &b);
 
 // 2D matrix multiplication
-Tensor<Tensor<int>> Matmul2D(const Tensor<Tensor<int>> &A,
-                             const Tensor<Tensor<int>> &B);
+template <typename T>
+Tensor<Tensor<T>> Matmul2D(const Tensor<Tensor<int>> &A,
+                           const Tensor<Tensor<int>> &B);
 
 // 3D tensor multiplication along last two axes
+template <typename T>
 Tensor<Tensor<Tensor<int>>> Matmul3D(const Tensor<Tensor<Tensor<int>>> &A,
                                      const Tensor<Tensor<Tensor<int>>> &B);
 
 // 4D tensor multiplication along last two axes
+template <typename T>
 Tensor<Tensor<Tensor<Tensor<int>>>>
 Matmul4D(const Tensor<Tensor<Tensor<Tensor<int>>>> &A,
          const Tensor<Tensor<Tensor<Tensor<int>>>> &B);

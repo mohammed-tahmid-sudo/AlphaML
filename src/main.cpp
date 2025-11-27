@@ -3,26 +3,44 @@
 #include "losses/Loss.h"
 #include "optimizers/Optimizer.h"
 #include "utils/Tensor.h"
+#include "utils/sequential.h"
 
 int main() {
-  int in_features = 3;
-  int out_features = 1;
+// --- Layer definitions ---
+    Dense1D<double> l1(3, 3);
+    Dense1D<double> l2(3, 2);
+    Dense1D<double> l3(2, 1);
 
-  Dense1D<double> layer(in_features, out_features);
+    // --- Assign weights and biases ---
+    l1.weights = {
+        {0.5, -1.0, 0.3},
+        {0.2, 0.1, -0.5},
+        {-0.4, 0.6, -0.2}
+    };
+    l1.bias = {0.0, 0.1, -0.1};
 
-  // Initialize weights and bias
-  layer.weights = Tensor<Tensor<double>>(
-      out_features, Tensor<double>(in_features, 1.0) // all 1s
-  );
+    l2.weights = {
+        {0.4, -0.6, 0.2},
+        {-0.3, 0.7, 0.5}
+    };
+    l2.bias = {0.2, -0.1};
 
-  layer.bias = Tensor<double>(out_features, 0.5); // all 0.5
+    l3.weights = {
+        {0.6, -0.2}
+    };
+    l3.bias = {0.5};
 
-  // Set input
-  layer.input = Tensor<double>(in_features, 2.0); // all 2s
+    // --- Input ---
+    Tensor<double> x{1.0, 2.0, 3.0};
 
-  // Forward pass
-  Tensor<double> output = layer.Forward();
+    // --- Sequential model ---
+    Sequential<double> model{{&l1, &l2, &l3}}; // No ReLU
 
-  output.print();
-  return 0;
-}
+    // --- Forward pass ---
+    auto y = model.Forward(x);
+
+    // --- Print final output ---
+    std::cout << "Final output: ";
+    y.print();
+
+    return 0;}
