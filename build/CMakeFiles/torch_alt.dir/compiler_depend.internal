@@ -24,12 +24,11 @@ CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o
 CMakeFiles/torch_alt.dir/src/main.cpp.o
  /home/tahmid/alphaML/src/main.cpp
  /home/tahmid/alphaML/include/layers/Activation.h
- /home/tahmid/alphaML/include/layers/Dense.h
  /home/tahmid/alphaML/include/layers/Layer.h
+ /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h
  /home/tahmid/alphaML/include/losses/Loss.h
  /home/tahmid/alphaML/include/optimizers/Optimizer.h
  /home/tahmid/alphaML/include/utils/Tensor.h
- /home/tahmid/alphaML/include/utils/sequential.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

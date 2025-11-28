@@ -3,6 +3,7 @@
 #include "layers/Layer.h"
 #include "utils/Tensor.h"
 #include <initializer_list>
+#include <vector>
 
 #pragma once
 
@@ -28,4 +29,6 @@ public:
 
     return output;
   }
+
+  void train(Tensor<Tensor<T>> datasett) {}
 };
