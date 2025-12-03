@@ -4,7 +4,6 @@
 #include <layers/Layer.h>
 #include <utils/Tensor.h>
 
-// Derived class
 template <typename T> class Dense1D : public Layer<T> {
 
 public:
@@ -16,8 +15,11 @@ public:
 
   Tensor<Tensor<T>> weights; // [out_features][in_features]
   Tensor<T> bias;            // [out_features]
+  Tensor<T> last_x;
 
   Tensor<T> Forward(const Tensor<T> &x) override {
+
+    last_x = x;
     Tensor<T> y(out_features, 0.0);
 
     for (int i = 0; i < out_features; i++) {
@@ -29,5 +31,35 @@ public:
     y.print();
 
     return y;
+  }
+  std::tuple<Tensor<T>, Tensor<Tensor<T>>, Tensor<T>>
+  Backward(const Tensor<T> &dy) {
+
+    Tensor<T> dx(in_features, 0.0);
+    Tensor<Tensor<T>> dW(out_features, Tensor<T>(in_features, 0.0));
+    Tensor<T> db(out_features, 0.0);
+
+    // db = dy
+    for (int i = 0; i < out_features; i++) {
+      db[i] = dy[i];
+    }
+
+    // dW[i][j] = dy[i] * x[j]
+    for (int i = 0; i < out_features; i++) {
+      for (int j = 0; j < in_features; j++) {
+        dW[i][j] = dy[i] * last_x[j];
+      }
+    }
+
+    // dx[j] = sum_i dy[i] * W[i][j]
+    for (int j = 0; j < in_features; j++) {
+      T sum = 0;
+      for (int i = 0; i < out_features; i++) {
+        sum += dy[i] * weights[i][j];
+      }
+      dx[j] = sum;
+    }
+
+    return {dx, dW, db};
   }
 };
