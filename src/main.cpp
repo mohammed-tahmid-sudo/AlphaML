@@ -1,4 +1,5 @@
 #include "layers/Activation.h"
+#include <optimizers/Adam.h>
 // #include "layers/Dense.h"
 #include "losses/Loss.h"
 #include "optimizers/Optimizer.h"
@@ -7,9 +8,18 @@
 // #include "utils/sequential.h"
 
 int main() {
-  Tensor<double> Ylogits = {0.2, 0.7, 0.1}; // predicted probabilities
-  Tensor<double> Ytrue = {0.0, 1.0, 0.0};   // true label (one-hot)
+  Tensor<double> params = {0.5, -0.3, 0.8};
+  Tensor<double> grads = {0.1, -0.2, 0.3};
 
-  double loss = CrossEntropyLoss(Ylogits, Ytrue);
-  std::cout << loss << std::endl;
+  AdamOptimizer optimizer(params.size(), 0.01);
+
+  for (int step = 0; step < 5; step++) {
+    optimizer.update(params, grads);
+
+    std::cout << "Step " << step + 1 << ": ";
+    // for (double p : params) std::cout << p << " ";
+    params.print();
+    std::cout << std::endl;
+  }
+  return 0;
 }
