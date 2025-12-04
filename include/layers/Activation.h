@@ -18,6 +18,13 @@ public:
     }
     return y;
   }
+  Tensor<T> Backward(const Tensor<T> &x, const Tensor<T> &grad_out) {
+    Tensor<T> grad_in = grad_out;
+    for (int i = 0; i < x.size(); i++) {
+      grad_in[i] *= (x[i] > 0 ? 1 : 0);
+    }
+    return grad_in;
+  }
 };
 
 template <typename T> class Sigmoid : public Layer<T> {
@@ -30,5 +37,12 @@ public:
       y.Push_back(T(1) / (T(1) + std::exp(-x[i])));
     }
     return y;
+  }
+  Tensor<T> Backward(const Tensor<T> &y, const Tensor<T> &grad_out) {
+    Tensor<T> grad_in = grad_out;
+    for (int i = 0; i < y.size(); i++) {
+      grad_in[i] *= y[i] * (1 - y[i]);
+    }
+    return grad_in;
   }
 };

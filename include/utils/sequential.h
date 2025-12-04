@@ -1,11 +1,12 @@
 // Sequential Function
 
+// Pragma once
+#pragma once
+
 #include "layers/Layer.h"
 #include "utils/Tensor.h"
 #include <initializer_list>
 #include <vector>
-
-#pragma once
 
 template <typename T> class Sequential : public Layer<T> {
 public:
@@ -30,5 +31,6 @@ public:
     return output;
   }
 
-  void train(Tensor<Tensor<T>> datasett) {}
+  // void train(Tensor<Tensor<T>> datasettk, float Learning_rate = 0.1 ) {}
+  // Don't need it
 };

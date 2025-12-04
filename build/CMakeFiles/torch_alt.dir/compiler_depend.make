@@ -19,6 +19,7 @@ CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o: /home/tahmid/alphaML/src/loss
 CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /home/tahmid/alphaML/include/layers/Activation.h \
   /home/tahmid/alphaML/include/layers/Layer.h \
+  /home/tahmid/alphaML/include/layers/flatten.h \
   /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h \
   /home/tahmid/alphaML/include/losses/Loss.h \
   /home/tahmid/alphaML/include/optimizers/Adam.h \
@@ -95,6 +96,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -578,6 +580,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/features.h:
 
+/usr/include/ctype.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/bits/refwrap.h:
@@ -585,10 +589,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/home/tahmid/alphaML/include/optimizers/Optimizer.h:
 
 /home/tahmid/alphaML/src/layers/Activation.cpp:
 
@@ -602,17 +602,11 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
 /home/tahmid/alphaML/include/optimizers/Adam.h:
-
-/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -656,6 +650,14 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
 /usr/include/c++/13/string:
 
 /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h:
@@ -666,6 +668,26 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /home/tahmid/alphaML/include/layers/Layer.h:
 
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/stdc-predef.h:
+
+/home/tahmid/alphaML/include/optimizers/Optimizer.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/home/tahmid/alphaML/src/data/Dataset.cpp:
+
+/home/tahmid/alphaML/include/layers/flatten.h:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/tuple:
+
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
@@ -675,16 +697,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/features-time64.h:
 
 /usr/include/c++/13/string_view:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/home/tahmid/alphaML/src/data/Dataset.cpp:
-
-/usr/include/c++/13/debug/assertions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/c++/13/tuple:
 
 /home/tahmid/alphaML/src/layers/Dense.cpp:
 
@@ -770,14 +782,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/locale_facets.h:
 
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -812,6 +816,10 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/stl_vector.h:
 
+/usr/include/endian.h:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
@@ -839,6 +847,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/cstdio:
 
 /usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/ctime:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -907,7 +917,3 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/endian.h:
