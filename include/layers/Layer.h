@@ -4,9 +4,12 @@
 #include <utils/Tensor.h>
 #pragma once
 
-template <typename T> struct Layer {
+template <typename T, typename input_forward = Tensor<T>,
+          typename input_backward = Tensor<T>,
+          typename backward_type = Tensor<T>>
+struct Layer {
 
-  virtual Tensor<T> Forward(const Tensor<T>& x) = 0;
-  virtual Tensor<T> Backward(const Tensor<T>& x) = 0;
+  virtual Tensor<T> Forward(const input_forward &x) = 0;
+  virtual backward_type Backward(const input_backward &x) = 0;
   virtual ~Layer() = default;
 };

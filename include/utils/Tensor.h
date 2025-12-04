@@ -50,6 +50,11 @@ public:
 
   T &operator[](size_t i) { return data[i]; }
   const T &operator[](size_t i) const { return data[i]; }
+  void Resize(size_t x) { data.resize(x); }
+  auto begin() { return data.begin(); }
+  auto end() { return data.end(); }
+  auto begin() const { return data.begin(); }
+  auto end() const { return data.end(); }
 };
 
 template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {
@@ -76,7 +81,7 @@ template <typename T> Tensor<T> Sub(const Tensor<T> &A, const Tensor<T> &B) {
 
 // 1D vector dot product
 
-template <typename T> 
+template <typename T>
 Tensor<T> Matmul1D(const Tensor<int> &a, const Tensor<int> &b);
 
 // 2D matrix multiplication
