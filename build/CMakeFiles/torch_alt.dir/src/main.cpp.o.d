@@ -179,7 +179,9 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /home/tahmid/alphaML/include/optimizers/Adam.h \
+ /home/tahmid/alphaML/include/layers/Dense.h \
  /home/tahmid/alphaML/include/losses/Loss.h \
  /home/tahmid/alphaML/include/optimizers/Optimizer.h \
  /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h \
+ /home/tahmid/alphaML/include/utils/sequential.h \
  /home/tahmid/alphaML/include/layers/flatten.h
