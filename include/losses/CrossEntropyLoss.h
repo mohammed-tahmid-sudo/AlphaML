@@ -1,6 +1,8 @@
 // CrossEntropyLoss.h / CrossEntropyLoss.cpp
 // Cross-Entropy loss for classification.
 
+#pragma once
+
 #include <cmath>
 #include <layers/Layer.h>
 #include <stdexcept>
