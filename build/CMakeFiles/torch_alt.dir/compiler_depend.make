@@ -81,7 +81,6 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
-  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -112,7 +111,6 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
-  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
@@ -581,10 +579,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/features.h:
 
-/usr/include/ctype.h:
-
-/usr/include/c++/13/vector:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/bits/refwrap.h:
@@ -610,6 +604,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/locale_classes.h:
 
 /home/tahmid/alphaML/include/optimizers/Adam.h:
+
+/usr/include/ctype.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -670,8 +666,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/bits/memoryfwd.h:
 
 /home/tahmid/alphaML/include/layers/Layer.h:
-
-/usr/include/c++/13/iterator:
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
@@ -821,8 +815,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/stl_vector.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
-
 /usr/include/endian.h:
 
 /usr/include/c++/13/bits/streambuf.tcc:
@@ -842,6 +834,8 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/13/cstddef:
+
+/usr/include/c++/13/vector:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
