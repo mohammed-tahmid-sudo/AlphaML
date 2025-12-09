@@ -63,44 +63,4 @@ public:
       y.Push_back(batch);
     }
   }
-
-  // THIS TRANING IS COMPLEATLY FLAWED. TODO: FIX IT LATER
-  void train(Layer<T> &Model, Tensor<Tensor<Tensor<Tensor<T>>>> &train_x,
-             Tensor<Tensor<Tensor<Tensor<T>>>> &test_x, Tensor<T> &train_y,
-             Tensor<T> &test_y, size_t epochs, int batch_size = 32,
-             float Learning_rate = 0.1, std::string loss = "crossentropy",
-             const std::string optimizer = "adam",
-             const std::string device = "CPU") {
-
-    std::cout << "Creating batch\n";
-    auto batches_x = CreateBatch(train_x, batch_size);
-    auto batches_y = CreateBatch(train_y, batch_size);
-    std::cout << "Batching Compleate\n";
-
-    for (int epoch = 0; epoch < epochs; epoch++) {
-
-      for (int batch = 0; batch < batches_y.size(); batch++) {
-        Tensor<Tensor<Tensor<T>>> batch_x = batches_x[batch];
-        auto batch_y = batches_y[batch];
-        for (int i = 0; i < batch_y.size(); i++) {
-          auto x_true = batch_x[i];
-          auto y_true = batches_y[i];
-
-          Tensor<T> y_preds = Model.Forward(x_true);
-          T loss = CrossEntropyLoss(y_preds, y_true);
-
-          Tensor<T> grad(y_preds.size());
-          for (int j = 0; j < y_preds.size(); j++) {
-            grad[j] = y_preds[j] - y_true[j];
-            Tensor<T> param_grads = compute_gradients(x_true, grad, params);
-						// ??????????????????????????????????????????????????????????????????????????
-						// This thing is SHIT ????????????????????????????
-						// I'm GONNA REWRITE ALL THIS SHIT IN A NICER WAY 
-						// SOO MUCH CODING FOR TODAY. NOW I'M GONNA HIT PYSIDE
-
-          }
-        }
-      }
-    }
-  }
 };
