@@ -2,9 +2,14 @@
 // Fully connected layer. Implements forward and backward pass.
 #pragma once
 #include <layers/Layer.h>
+#include <tuple>
 #include <utils/Tensor.h>
 
-template <typename T> class Dense1D : public Layer<T> {
+template <typename T, typename input = const Tensor<T> &,
+          typename input_back = const Tensor<T> &,
+          typename backward =
+              std::tuple<Tensor<T>, Tensor<Tensor<T>>, Tensor<T>>>
+class Dense1D : public Layer<T> {
 
 public:
   int in_features, out_features;
@@ -17,7 +22,7 @@ public:
   Tensor<T> bias;            // [out_features]
   Tensor<T> last_x;
 
-  Tensor<T> Forward(const Tensor<T> &x) override {
+  Tensor<T> Forward(input x) override {
 
     last_x = x;
     Tensor<T> y(out_features, 0.0);
@@ -32,8 +37,7 @@ public:
 
     return y;
   }
-  std::tuple<Tensor<T>, Tensor<Tensor<T>>, Tensor<T>>
-  Backward(const Tensor<T> &dy) {
+  backward Backward(input_back dy) {
 
     Tensor<T> dx(in_features, 0.0);
     Tensor<Tensor<T>> dW(out_features, Tensor<T>(in_features, 0.0));

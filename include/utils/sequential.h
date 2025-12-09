@@ -51,16 +51,4 @@ public:
     return g;
   }
 
-  Tensor<Tensor<Tensor<Tensor<T>>>>
-  CreateBatch(const Tensor<Tensor<Tensor<T>>> &data, int batchsize) {
-    Tensor<Tensor<Tensor<Tensor<T>>>> y;
-
-    for (int i = 0; i < data.size(); i += batchsize) {
-      Tensor<Tensor<Tensor<int>>> batch;
-      for (int j = i; j < std::min(i + batchsize, (int)data.size()); j++)
-        batch.Push_back(data[j]);
-
-      y.Push_back(batch);
-    }
-  }
 };
