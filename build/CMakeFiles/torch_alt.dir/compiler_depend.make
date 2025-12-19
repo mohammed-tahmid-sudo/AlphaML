@@ -26,6 +26,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /home/tahmid/alphaML/include/optimizers/Adam.h \
   /home/tahmid/alphaML/include/optimizers/Optimizer.h \
   /home/tahmid/alphaML/include/utils/Tensor.h \
+  /home/tahmid/alphaML/include/utils/Utils.h \
   /home/tahmid/alphaML/include/utils/sequential.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -85,6 +86,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
@@ -145,6 +147,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -315,6 +318,7 @@ CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o: /home/tahmid/alphaML/src/utils/
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -357,6 +361,7 @@ CMakeFiles/torch_alt.dir/src/utils/Tensor.cpp.o: /home/tahmid/alphaML/src/utils/
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -495,8 +500,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -587,11 +590,21 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/vector:
 
+/usr/include/c++/13/utility:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/c++/13/tuple:
 
 /usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
@@ -618,12 +631,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/errno.h:
 
@@ -655,8 +662,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -673,6 +678,20 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/alloca.h:
 
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/stdc-predef.h:
+
+/home/tahmid/alphaML/include/optimizers/Optimizer.h:
+
+/usr/include/c++/13/bits/specfun.h:
+
 /usr/include/c++/13/string:
 
 /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h:
@@ -688,20 +707,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /home/tahmid/alphaML/include/layers/Dense.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/stdc-predef.h:
-
-/home/tahmid/alphaML/include/optimizers/Optimizer.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -734,10 +739,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /home/tahmid/alphaML/include/layers/Activation.h:
 
 /usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/iosfwd:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -781,7 +782,21 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/home/tahmid/alphaML/include/utils/Utils.h:
+
+/home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/predefined_ops.h:
 
 /home/tahmid/alphaML/src/optimizers/Adam.cpp:
 
@@ -827,13 +842,11 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/new:
 
-/home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/13/bits/stl_relops.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -942,5 +955,3 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/c++/13/tr1/gamma.tcc:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:

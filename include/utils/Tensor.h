@@ -7,12 +7,14 @@
 // tensor_print.hpp
 // tensor_nd_matmul.hpp
 
+/////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
 #include <cstddef>
 #include <initializer_list>
 #include <iostream>
 #include <type_traits>
+#include <utility>
 #include <vector>
 
 // ---------------- Tensor class ----------------
@@ -28,6 +30,10 @@ public:
   Tensor() = default;
   Tensor(std::initializer_list<T> list) : data(list) {}
   Tensor(size_t n, const T &value = T()) : data(n, value) {}
+
+  template <typename InputIt,
+            typename = std::enable_if_t<!std::is_integral_v<InputIt>>>
+  Tensor(InputIt first, InputIt last) : data(first, last) {}
 
   void print() {
     std::cout << "[";
@@ -51,12 +57,17 @@ public:
   T &operator[](size_t i) { return data[i]; }
   const T &operator[](size_t i) const { return data[i]; }
   void Resize(size_t x) { data.resize(x); }
+
+  template <typename... Args> void emplace_back(Args &&...args) {
+    data.emplace_back(std::forward<Args>(args)...);
+  }
+
   auto begin() { return data.begin(); }
   auto end() { return data.end(); }
   auto begin() const { return data.begin(); }
   auto end() const { return data.end(); }
 };
-
+/////////////////////////////////////////////////////////////////////////////////
 template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {
   Tensor<T> result;
   for (size_t i = 0; i < A.size(); ++i) {
