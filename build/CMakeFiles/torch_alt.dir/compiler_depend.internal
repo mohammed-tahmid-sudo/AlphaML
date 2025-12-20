@@ -23,20 +23,15 @@ CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o
 
 CMakeFiles/torch_alt.dir/src/main.cpp.o
  /home/tahmid/alphaML/src/main.cpp
- /home/tahmid/alphaML/include/layers/Activation.h
  /home/tahmid/alphaML/include/layers/Dense.h
  /home/tahmid/alphaML/include/layers/Layer.h
- /home/tahmid/alphaML/include/layers/flatten.h
  /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h
- /home/tahmid/alphaML/include/losses/Loss.h
- /home/tahmid/alphaML/include/optimizers/Adam.h
- /home/tahmid/alphaML/include/optimizers/Optimizer.h
  /home/tahmid/alphaML/include/utils/Tensor.h
- /home/tahmid/alphaML/include/utils/Utils.h
  /home/tahmid/alphaML/include/utils/sequential.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
+ /usr/include/assert.h
  /usr/include/c++/13/algorithm
  /usr/include/c++/13/backward/binders.h
  /usr/include/c++/13/bit
@@ -105,6 +100,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
  /usr/include/c++/13/bits/vector.tcc
+ /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
  /usr/include/c++/13/clocale

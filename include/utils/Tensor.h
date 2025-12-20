@@ -22,11 +22,9 @@ template <typename T> class Tensor {
 public:
   static_assert(std::is_arithmetic_v<T> || std::is_class_v<T>,
                 "Tensor only supports arithmetic or nested Tensor types.");
-
-private:
-  std::vector<T> data;
-
-public:
+  //////////////////////////
+  std::vector<T> data; /////
+                       //////////////////////////
   Tensor() = default;
   Tensor(std::initializer_list<T> list) : data(list) {}
   Tensor(size_t n, const T &value = T()) : data(n, value) {}
@@ -34,6 +32,13 @@ public:
   template <typename InputIt,
             typename = std::enable_if_t<!std::is_integral_v<InputIt>>>
   Tensor(InputIt first, InputIt last) : data(first, last) {}
+
+  Tensor(size_t outer_size, size_t inner_size, const T &init_val = T()) {
+    data.resize(outer_size);
+    for (size_t i = 0; i < outer_size; ++i) {
+      data[i] = Tensor<T>(inner_size, init_val); // initialize each inner tensor
+    }
+  }
 
   void print() {
     std::cout << "[";
@@ -56,7 +61,12 @@ public:
 
   T &operator[](size_t i) { return data[i]; }
   const T &operator[](size_t i) const { return data[i]; }
-  void Resize(size_t x) { data.resize(x); }
+  // void resize(size_t x) { data.resize(x); }
+  void resize(size_t n, const T &value) {
+    data.resize(n);
+    for (size_t i = 0; i < n; ++i)
+      data[i] = value;
+  }
 
   template <typename... Args> void emplace_back(Args &&...args) {
     data.emplace_back(std::forward<Args>(args)...);
@@ -66,6 +76,7 @@ public:
   auto end() { return data.end(); }
   auto begin() const { return data.begin(); }
   auto end() const { return data.end(); }
+  auto at(size_t loc) const { return data.at(loc); }
 };
 /////////////////////////////////////////////////////////////////////////////////
 template <typename T> Tensor<T> Add(const Tensor<T> &A, const Tensor<T> &B) {

@@ -4,7 +4,6 @@
 
 #include "layers/Layer.h"
 #include "utils/Tensor.h"
-#include <algorithm>
 #include <initializer_list>
 #include <losses/CrossEntropyLoss.h>
 #include <vector>
@@ -50,5 +49,11 @@ public:
       g = layers[i]->Backward(g);
     return g;
   }
-
+  // Update parameters of all layers
+  void UpdateParameters(T lr) {
+    for (auto *l : layers) {
+      l->UpdateParameters(
+          lr); // Each layer applies gradient descent to its own weights/biases
+    }
+  }
 };

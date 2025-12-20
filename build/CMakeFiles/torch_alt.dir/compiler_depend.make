@@ -17,20 +17,15 @@ CMakeFiles/torch_alt.dir/src/losses/MSELoss.cpp.o: /home/tahmid/alphaML/src/loss
   /usr/include/stdc-predef.h
 
 CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
-  /home/tahmid/alphaML/include/layers/Activation.h \
   /home/tahmid/alphaML/include/layers/Dense.h \
   /home/tahmid/alphaML/include/layers/Layer.h \
-  /home/tahmid/alphaML/include/layers/flatten.h \
   /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h \
-  /home/tahmid/alphaML/include/losses/Loss.h \
-  /home/tahmid/alphaML/include/optimizers/Adam.h \
-  /home/tahmid/alphaML/include/optimizers/Optimizer.h \
   /home/tahmid/alphaML/include/utils/Tensor.h \
-  /home/tahmid/alphaML/include/utils/Utils.h \
   /home/tahmid/alphaML/include/utils/sequential.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
@@ -99,6 +94,7 @@ CMakeFiles/torch_alt.dir/src/main.cpp.o: /home/tahmid/alphaML/src/main.cpp \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -596,17 +592,19 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/tuple:
 
-/usr/include/c++/13/tr1/poly_hermite.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/c++/13/tr1/legendre_function.tcc:
+/usr/include/c++/13/bits/refwrap.h:
 
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+/usr/include/c++/13/debug/debug.h:
 
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
+/usr/include/c++/13/stdexcept:
 
 /usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/time.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/wchar.h:
 
@@ -620,8 +618,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/locale_classes.h:
 
-/home/tahmid/alphaML/include/optimizers/Adam.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/13/bits/char_traits.h:
@@ -631,6 +627,12 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/errno.h:
 
@@ -642,6 +644,18 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
 /usr/include/math.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
@@ -650,17 +664,7 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/c++/13/typeinfo:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/exception.h:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -670,61 +674,21 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bit:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
 /usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/stdc-predef.h:
-
-/home/tahmid/alphaML/include/optimizers/Optimizer.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/string:
+/home/tahmid/alphaML/src/layers/Dense.cpp:
 
 /home/tahmid/alphaML/include/losses/CrossEntropyLoss.h:
 
 /home/tahmid/alphaML/src/layers/Activation.cpp:
 
-/usr/include/time.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/home/tahmid/alphaML/include/layers/Layer.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /home/tahmid/alphaML/include/layers/Dense.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/home/tahmid/alphaML/src/data/Dataset.cpp:
-
-/home/tahmid/alphaML/include/layers/flatten.h:
-
-/usr/include/c++/13/debug/assertions.h:
-
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/tr1/modified_bessel_func.tcc:
-
-/home/tahmid/alphaML/include/utils/sequential.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -732,13 +696,41 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/string_view:
 
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/home/tahmid/alphaML/src/data/Dataset.cpp:
+
+/usr/include/c++/13/debug/assertions.h:
+
 /usr/include/c++/13/algorithm:
 
-/home/tahmid/alphaML/src/layers/Dense.cpp:
+/home/tahmid/alphaML/src/optimizers/Adam.cpp:
 
-/home/tahmid/alphaML/include/layers/Activation.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/home/tahmid/alphaML/include/layers/Layer.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/bits/specfun.h:
 
 /usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/iosfwd:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -754,15 +746,15 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/cwchar:
 
+/usr/include/assert.h:
+
 /home/tahmid/alphaML/include/utils/Tensor.h:
 
 /usr/include/c++/13/clocale:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/c++/13/bits/functexcept.h:
+/usr/include/c++/13/bit:
 
 /usr/include/c++/13/ios:
 
@@ -782,43 +774,21 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/home/tahmid/alphaML/include/utils/Utils.h:
-
-/home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/home/tahmid/alphaML/src/optimizers/Adam.cpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/home/tahmid/alphaML/include/utils/sequential.h:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -841,6 +811,20 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/new:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/c++/13/string:
+
+/home/tahmid/alphaML/src/utils/RandomDataGenerator.cpp:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -872,6 +856,12 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/bits/vector.tcc:
 
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13/cassert:
+
+/usr/include/c++/13/tr1/ell_integral.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/c++/13/cmath:
@@ -901,8 +891,6 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
-
-/home/tahmid/alphaML/include/losses/Loss.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
@@ -948,10 +936,10 @@ CMakeFiles/torch_alt.dir/src/utils/Utils.cpp.o: /home/tahmid/alphaML/src/utils/U
 
 /usr/include/c++/13/tr1/beta_function.tcc:
 
-/usr/include/c++/13/tr1/ell_integral.tcc:
-
 /usr/include/c++/13/cctype:
 
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/c++/13/tr1/gamma.tcc:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:

@@ -11,5 +11,7 @@ struct Layer {
 
   virtual Tensor<T> Forward(const input_forward &x) = 0;
   virtual backward_type Backward(const input_backward &x) = 0;
+
+  virtual void UpdateParameters(T lr) {} 
   virtual ~Layer() = default;
 };
