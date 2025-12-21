@@ -6,26 +6,27 @@
 
 #include <cmath>
 
-// ReLU for multi-dimensional Tensor
-template <typename T> class ReLU : public Layer<T> {
-public:
-  // ReLU(Tensor<T> data) : x(data) {}
+template <typename T>
+class ReLU : public Layer<T> {
+    Tensor<T> x_cache;
 
-  Tensor<T> Forward(const Tensor<T> &x) {
-    Tensor<T> y;
-    for (int i = 0; i < x.size(); i++) {
-      y.Push_back(std::max(T(0), x[i]));
+public:
+    Tensor<T> Forward(const Tensor<T>& x) override {
+        x_cache = x;
+        Tensor<T> y(x.size());
+        for (size_t i = 0; i < x.size(); ++i)
+            y[i] = std::max(T(0), x[i]);
+        return y;
     }
-    return y;
-  }
-  Tensor<T> Backward(const Tensor<T> &x, const Tensor<T> &grad_out) {
-    Tensor<T> grad_in = grad_out;
-    for (int i = 0; i < x.size(); i++) {
-      grad_in[i] *= (x[i] > 0 ? 1 : 0);
+
+    Tensor<T> Backward(const Tensor<T>& grad_out) override {
+        Tensor<T> grad_in(grad_out.size());
+        for (size_t i = 0; i < grad_out.size(); ++i)
+            grad_in[i] = grad_out[i] * (x_cache[i] > 0 ? 1 : 0);
+        return grad_in;
     }
-    return grad_in;
-  }
 };
+
 
 template <typename T> class Sigmoid : public Layer<T> {
 public:

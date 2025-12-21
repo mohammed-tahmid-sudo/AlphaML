@@ -1,42 +1,12 @@
 // main_fixed.cpp
+#include "losses/MSELoss.h"
 #include "layers/Dense.h"
+#include "layers/Activation.h"
 #include "losses/CrossEntropyLoss.h" // optional if not already included
 #include "utils/sequential.h"
 #include <algorithm>
 #include <cmath>
 #include <iostream>
-
-template <typename T>
-T CrossEntropyLossFromLogits(const Tensor<T> &logits, int target_class) {
-  T maxv = logits[0];
-  for (size_t i = 1; i < logits.size(); ++i)
-    if (logits[i] > maxv)
-      maxv = logits[i];
-  T sum = 0;
-  for (size_t i = 0; i < logits.size(); ++i)
-    sum += std::exp(logits[i] - maxv);
-  T lse = maxv + std::log(sum);
-  return lse - logits[target_class];
-}
-
-template <typename T>
-Tensor<T> CrossEntropyGradFromLogits(const Tensor<T> &logits,
-                                     int target_class) {
-  size_t C = logits.size();
-  Tensor<T> grad(C);
-  T maxv = logits[0];
-  for (size_t i = 1; i < C; ++i)
-    if (logits[i] > maxv)
-      maxv = logits[i];
-  T sum = 0;
-  for (size_t i = 0; i < C; ++i)
-    sum += std::exp(logits[i] - maxv);
-  for (size_t i = 0; i < C; ++i) {
-    T prob = std::exp(logits[i] - maxv) / sum;
-    grad[i] = prob - (i == (size_t)target_class ? (T)1 : (T)0);
-  }
-  return grad;
-}
 
 template <typename T> int argmax(const Tensor<T> &t) {
   int idx = 0;
@@ -115,8 +85,10 @@ int main() {
   }
 
   // model
-  Sequential<T> model(
-      {new Dense<T>(10, 16), new Dense<T>(16, 8), new Dense<T>(8, 2)});
+  // Sequential<T> model(
+  //     {new Dense<T>(10, 16), new Dense<T>(16, 8), new Dense<T>(8, 2)});
+  Sequential<T> model({new Dense<T>(10, 16), new ReLU<T>(), new Dense<T>(16, 8),
+                       new ReLU<T>(), new Dense<T>(8, 2)});
 
   double lr = 1e-2;
   int epochs = 2000;
@@ -144,11 +116,11 @@ int main() {
 
       // --- use your project's CrossEntropyLoss that expects (Tensor, Tensor)
       // ---
-      T loss = CrossEntropyLoss(logits, y_onehot);
+      T loss = MSELoss(logits, y_onehot);
 
       // gradient: use stable softmax difference (compatible with
       // Dense::Backward)
-      Tensor<T> grad = CrossEntropyGradFromLogits(logits, target);
+      Tensor<T> grad = MSEGrad(logits, target);
 
       model.Backward(grad);
       model.UpdateParameters(lr);
