@@ -1,9 +1,9 @@
 // main_fixed.cpp
-#include "losses/MSELoss.h"
-#include "layers/Dense.h"
-#include "layers/Activation.h"
-#include "losses/CrossEntropyLoss.h" // optional if not already included
-#include "utils/sequential.h"
+#include "include/losses/MSELoss.h"
+#include "include/layers/Dense.h"
+#include "include/layers/Activation.h"
+#include "include/losses/CrossEntropyLoss.h" // optional if not already included
+#include "include/utils/sequential.h"
 #include <algorithm>
 #include <cmath>
 #include <iostream>
@@ -17,6 +17,19 @@ template <typename T> int argmax(const Tensor<T> &t) {
       idx = (int)i;
     }
   return idx;
+}
+// Gradient of MSE
+template <typename T>
+Tensor<T> MSEGrad(const Tensor<T>& y_pred, const Tensor<T>& y_true) {
+    if (y_pred.size() != y_true.size())
+        throw std::runtime_error("Size mismatch in MSEGrad");
+
+    Tensor<T> grad(y_pred.size());
+    T inv = 1.0 / y_pred.size();
+    for (size_t i = 0; i < y_pred.size(); ++i)
+        grad[i] = 2 * (y_pred[i] - y_true[i]) * inv;
+
+    return grad;
 }
 
 int main() {
