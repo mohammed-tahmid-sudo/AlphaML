@@ -33,7 +33,7 @@ public:
 
   Sequential(std::initializer_list<Layer<T> *> list) {
     for (auto l : list)
-      layers.push_back(l);
+      layers.emplace_back(l);
   }
   Tensor<T> Forward(const Tensor<T> &x) override {
     Tensor<T> output = x;
